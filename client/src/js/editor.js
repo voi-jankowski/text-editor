@@ -30,8 +30,7 @@ export default class {
       console.info("Loaded data from IndexedDB, injecting into editor");
       console.log("data: ", data);
       // if (data && data.length > 0) {
-      //   const content = data.content; // Retrieve the content from the first item in the array
-      //   this.editor.setValue(content);
+      //   this.editor.setValue(data);
       // } else {
       //   this.editor.setValue(localData || header);
       // }

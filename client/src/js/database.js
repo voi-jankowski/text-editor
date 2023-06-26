@@ -43,8 +43,9 @@ export const getDb = async () => {
 
   // Get confirmation of the request.
   const result = await request;
-  console.log("All content from the database:", result);
-  return result.value;
+  const value = result?.value;
+  console.log("All content from the database:", value);
+  return value;
 };
 
 initdb();
