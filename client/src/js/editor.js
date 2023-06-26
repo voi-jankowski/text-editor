@@ -29,12 +29,13 @@ export default class {
     getDb().then((data) => {
       console.info("Loaded data from IndexedDB, injecting into editor");
       console.log("data: ", data);
-      if (data && data.length > 0) {
-        const content = data[0].content; // Retrieve the content from the first item in the array
-        this.editor.setValue(content);
-      } else {
-        this.editor.setValue(localData || header);
-      }
+      // if (data && data.length > 0) {
+      //   const content = data.content; // Retrieve the content from the first item in the array
+      //   this.editor.setValue(content);
+      // } else {
+      //   this.editor.setValue(localData || header);
+      // }
+      this.editor.setValue(data || localData || header);
     });
 
     this.editor.on("change", () => {
@@ -43,10 +44,11 @@ export default class {
 
     // Save the content of the editor when the editor itself loses focus
     this.editor.on("blur", () => {
-      console.log("The editor has lost focus");
-      let content = this.editor.getValue();
-      console.log("Content:", content, typeof content);
-      putDb(content);
+      // console.log("The editor has lost focus");
+      // let content = this.editor.getValue();
+      // console.log("Content:", content, typeof content);
+      // putDb(content);
+      putDb(localStorage.getItem("content"));
     });
   }
 }
