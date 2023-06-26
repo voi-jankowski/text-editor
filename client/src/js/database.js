@@ -17,12 +17,12 @@ export const putDb = async (content) => {
   console.log("Adding content to the database:", content);
 
   // Create a connection to the database and specify the database and data privileges.
-  const jateDb = await openDB("jate", 1);
+  const jateDb = await openDB("jate", 2);
   const tx = jateDb.transaction("jate", "readwrite");
   const store = tx.objectStore("jate");
 
   // Use the .add() method on the store and pass in the content.
-  const request = store.add(content);
+  const request = store.add({ content });
 
   // Get confirmation of the request.
   const result = await request;
@@ -34,7 +34,7 @@ export const getDb = async () => {
   console.log("Getting all content from the database");
 
   // Create a connection to the database and specify the database and data privileges.
-  const jateDb = await openDB("jate", 1);
+  const jateDb = await openDB("jate", 2);
   const tx = jateDb.transaction("jate", "readonly");
   const store = tx.objectStore("jate");
 
