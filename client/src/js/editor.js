@@ -6,8 +6,6 @@ export default class {
   constructor() {
     const localData = localStorage.getItem("content");
 
-    console.log("localData:", localData);
-
     // check if CodeMirror is loaded
     if (typeof CodeMirror === "undefined") {
       throw new Error("CodeMirror is not loaded");
@@ -28,12 +26,7 @@ export default class {
     // Fall back to localStorage if nothing is stored in indexeddb, and if neither is available, set the value to header.
     getDb().then((data) => {
       console.info("Loaded data from IndexedDB, injecting into editor");
-      console.log("data: ", data);
-      // if (data && data.length > 0) {
-      //   this.editor.setValue(data);
-      // } else {
-      //   this.editor.setValue(localData || header);
-      // }
+
       this.editor.setValue(data || localData || header);
     });
 
@@ -43,10 +36,6 @@ export default class {
 
     // Save the content of the editor when the editor itself loses focus
     this.editor.on("blur", () => {
-      // console.log("The editor has lost focus");
-      // let content = this.editor.getValue();
-      // console.log("Content:", content, typeof content);
-      // putDb(content);
       putDb(localStorage.getItem("content"));
     });
   }
