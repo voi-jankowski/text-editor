@@ -21,50 +21,59 @@ Just Another Text Editor is an in-browser text editor application that allows yo
 To use Just Another Text Editor, follow these steps:
 
 1. Open the application in your preferred web browser.
-2. When you ope the page for the first time your editor will have a header in the text area, replace it with your content
-3. [Add specific instructions for interacting with the app and using its features.]
+2. When you ope the page for the first time your editor will have a header in the text area, replace it with your content.
+3. When you click off the DOM window it will get saved to your database.
+4. When you refresh the page or close it and return to it later, it will retrieve the saved version of your content and you can keep editing it - it will get saved every time you click off your window.
+5. There is an `Install` button on the left of the top bar. If you click it and confirm the installation, the text editor will get saved as an app on your desktop. You can use it both in an app window or in your browser.
+6. Both installed app and in-browser version have the off-line functionality.
 
-### Saving Content to Database
-
-1. [Provide instructions for saving content to the database.]
-2. [Include a screenshot demonstrating the saving functionality, e.g., saving content to the database: ![Save content screenshot](./path/to/save-screenshot.png).]
-
-### Retrieving Content from Database
-
-1. [Provide instructions for retrieving content from the database.]
-2. [Include a screenshot demonstrating the retrieval functionality, e.g., retrieving content from the database: ![Retrieve content screenshot](./path/to/retrieve-screenshot.png).]
-
-### Offline Functionality
-
-Just Another Text Editor offers offline functionality, allowing you to access and interact with your content even without an internet connection.
-
-[Include any additional instructions or details about the offline functionality.]
-
-## Screenshots
+### Screenshots
 
 1. Opening page of the app: ![Opening page screenshot](./path/to/opening-page-screenshot.png)
-2. Saving content to the database: ![Save content screenshot](./path/to/save-screenshot.png)
+2. Installing the app: ![Instal the app](./path/to/save-screenshot.png)
 3. Retrieving content from the database: ![Retrieve content screenshot](./path/to/retrieve-screenshot.png)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## License
 
 Distributed under the [MIT License](https://opensource.org/licenses/MIT). See LICENSE.txt for more information.
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## Contributing
 
-If you have suggestions that would make Just Another Text Editor better, please fork the repository and create a pull request. You can also open an issue with the tag "enhancement". Don't forget to give the project a star!
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star!
 
-[Provide instructions or steps for contributing.]
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/YourFeature`)
+3. Commit your Changes (`git commit -m 'Add Your Feature'`)
+4. Push to the Branch (`git push origin feature/YourFeature`)
+5. Open a Pull Request
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Questions
 
 If you have any questions about the project, please contact me through [my GitHub](https://github.com/your-github-username) or email me at [your-email@example.com](mailto:your-email@example.com).
 
+## Questions
+
+If you have any questions about the project please contact me through [my Github](https://github.com/voi-jankowski) or email me at [voi.jankowski@gmail.com](mailto:voi.jankowski@gmail.com).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## Credits
 
-[Include any credits or acknowledgments.]
+The UI was created by edX Boot Camps LLC.
 
-## Links
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-- [GitHub Repository](https://github.com/your-github-username/just-another-text-editor)
-- [Live Application](https://your-app-url.com/)
+## LInks
+
+The location of the project [on GitHub](https://github.com/voi-jankowski/text-editor).
+
+You can check out the live application [here](https://guarded-temple-79083-0adc5a5780fa.herokuapp.com/).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
