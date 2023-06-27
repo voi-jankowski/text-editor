@@ -22,16 +22,19 @@ To use Just Another Text Editor, follow these steps:
 
 1. Open the application in your preferred web browser.
 2. When you ope the page for the first time your editor will have a header in the text area, replace it with your content.
+
+![Opening page screenshot](./client/assets/jate-1.png)
+
 3. When you click off the DOM window it will get saved to your database.
 4. When you refresh the page or close it and return to it later, it will retrieve the saved version of your content and you can keep editing it - it will get saved every time you click off your window.
+
+![Retrieve content screenshot](./client/assets/jate-3.png)
+
 5. There is an `Install` button on the left of the top bar. If you click it and confirm the installation, the text editor will get saved as an app on your desktop. You can use it both in an app window or in your browser.
+
+![Instal the app](./client/assets/jate-2.png)
+
 6. Both installed app and in-browser version have the off-line functionality.
-
-### Screenshots
-
-1. Opening page of the app: ![Opening page screenshot](./path/to/opening-page-screenshot.png)
-2. Installing the app: ![Instal the app](./path/to/save-screenshot.png)
-3. Retrieving content from the database: ![Retrieve content screenshot](./path/to/retrieve-screenshot.png)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -53,10 +56,6 @@ Don't forget to give the project a star!
 5. Open a Pull Request
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## Questions
-
-If you have any questions about the project, please contact me through [my GitHub](https://github.com/your-github-username) or email me at [your-email@example.com](mailto:your-email@example.com).
 
 ## Questions
 
